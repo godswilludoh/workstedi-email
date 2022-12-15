@@ -6,12 +6,260 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worksteadi-Email</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 
-    <style></style>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 3rem;
+        }
+
+        img .worksteadi-logo {
+            width: 150px;
+            max-width: 100%;
+        }
+
+        .worksteadi-logo {
+            display: block;
+            margin: 1rem auto;
+            height: 40px;
+            max-width: 100%;
+        }
+
+        .invoice-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin: 1rem;
+            color: #000000;
+        }
+
+        .invoice-text {
+            margin: 1rem;
+            font-size: 14px;
+            font-weight: 400;
+            color: #2C455B;
+            line-height: 1.5rem;
+        }
+
+        .span-text {
+            color: #000000;
+            font-weight: 600;
+        }
+
+        hr {
+            width: 60%;
+            margin: auto;
+        }
+
+        .main-btn {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            margin-top: 2rem;
+            text-transform: uppercase;
+            width: 168px;
+            height: 40px;
+            border-radius: 5px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .btn-pay {
+            background: #2991F1;
+            color: #FFFFFF;
+            font-size: 15px;
+        }
+
+        .btn-invoice {
+            color: #2991F1;
+            background: #FFFFFF;
+            border: 1px solid #2991F1;
+            font-size: 15px;
+        }
+
+        .btn-pay:hover {
+            cursor: pointer;
+            background: #116ec5;
+        }
+
+        .btn-invoice:hover {
+            cursor: pointer;
+            color: #116ec5;
+        }
+
+        .invoice-summary {
+            margin: 2rem;
+            border: 1px solid #00000017;
+            border-radius: 10px;
+            width: 700px;
+            margin: 2rem auto;
+        }
+
+        .table-title {
+            font-weight: 600;
+            color: #323232;
+            text-align: left;
+            margin: 1rem 2rem;
+        }
+
+        table {
+            margin: 2rem;
+            border-collapse: separate;
+            width: 90%;
+        }
+
+        tr:nth-child(odd) {
+            background: #F7FBFE;
+        }
+
+        table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        table .row-data {
+            color: #0F1011;
+            font-weight: 600;
+        }
+
+        .table-tbn {
+            background: #2991F1;
+            border-radius: 2.5px;
+            color: #FFFFFF;
+            font-size: 12px;
+            margin-bottom: 2rem;
+            margin-left: 25rem;
+        }
+
+        .table-tbn:hover {
+            cursor: pointer;
+            background: #116ec5;
+        }
+
+        .inquiry {
+            margin: 2rem;
+            font-size: 20px;
+            color: #1E2226;
+            font-weight: 400;
+        }
+
+        a {
+            color: #2991F1;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-rights {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            background: #2991F1;
+            font-size: 20px;
+            color: #FAFAFA;
+            padding: 1.5rem;
+        }
+
+        .icon-img {
+            margin-left: 1.2rem
+        }
+
+        .icon-img:hover {
+            cursor: pointer;
+        }
+
+        .footer-ending {
+            margin: 2rem;
+        }
+    </style>
 </head>
 
 <body>
 
+    <div class="container">
+        <header>
+            <a href="#"> <img class="worksteadi-logo" src="/images/worksteadi-logo.png" alt="workstedi-logo" /></a>
+            <h1 class="invoice-title">New Invoice from Royal Hairs</h1>
+            <p class="invoice-text">Invoice <span class="span-text">#87112</span> was sent to you by Royal Hairs for
+                review and payment. It
+                contains 2 <br />
+                items,
+                and the total
+                price is <span class="span-text">N3,000.</span></p>
+            <hr>
+        </header>
+        <main>
+            <div class="main-btn">
+                <button class="btn btn-pay">pay now</button>
+                <button class="btn btn-invoice">view invoice</button>
+            </div>
+
+            <div class="invoice-summary">
+                <table>
+                    <p class="table-title">Invoice Summary</p>
+                    <tr>
+                        <td>Vendor’s name</td>
+                        <td class="row-data">Royal Hairs</td>
+                    </tr>
+                    <tr>
+                        <td>Total number of items</td>
+                        <td class="row-data">2 items</td>
+                    </tr>
+                    <tr>
+                        <td>Total amount</td>
+                        <td class="row-data">N3,000</td>
+                    </tr>
+                </table>
+                <button class="btn table-tbn">PAY VENDOR Now!</button>
+            </div>
+
+            <hr>
+
+            <p class="inquiry">Have a question? <a href='#'>info@workstedi.com</a></p>
+        </main>
+        <footer>
+            <div class="footer-rights">
+                <p>2021 WorkSteadi. All Rights Reserved</p>
+                <div class="icons">
+                    <a href="https://twitter.com/" target="_blank"><img class="icon-img" src="/images/twitter.png"
+                            alt="twitter-icon" /></a>
+                    <a href="https://www.google.com/" target="_blank"><img class="icon-img" src="/images/google.png"
+                            alt="google-icon" /></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="icon-img"
+                            src="/images/instagram.png" alt="instagram-icon" /></a>
+                    <a href="https://www.facebook.com/" target="_blank"> <img class="icon-img"
+                            src="/images/facebook.png" alt="facebook-icon" /></a>
+                    <a href="https://www.linkedin.com/" target="_blank"> <img class="icon-img"
+                            src="/images/linkedin.png" alt="linkedin-icon" /></a>
+
+                </div>
+            </div>
+
+            <p class="footer-ending">This email template was sent to you because we want to make the world a better
+                place. <br> You can <a href="#">change your
+                    subscription</a> settings anytime.</p>
+        </footer>
+    </div>
 </body>
 
 </html>
